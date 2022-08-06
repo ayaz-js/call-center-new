@@ -1,0 +1,11 @@
+.pricing {
+  &__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  &__card {
+    background-color: #f7f7f7;
+    max-width: 400px;
+  }
+}
