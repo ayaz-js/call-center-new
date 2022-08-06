@@ -1,0 +1,100 @@
+.faq {
+  padding: 38px 0 0;
+
+  @media screen and (max-width: 1024px) {
+    padding: 48px 16px 0;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      max-width: 720px;
+    }
+  }
+
+  &__description {
+    max-width: 600px;
+    margin-left: auto;
+
+    @media screen and (max-width: 768px) {
+      padding: 42px 0 0;
+    }
+  }
+
+  &__title {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 38px;
+    margin: 0;
+  }
+
+  &__accardion-text {
+    margin: 0;
+  }
+
+  &__accardion {
+    margin-top: 22px;
+
+    &-button {
+      position: relative;
+      width: 100%;
+      background: transparent;
+      border: none;
+      text-align: left;
+      font-size: 18px;
+      padding: 0;
+      cursor: pointer;
+
+      &::before {
+        content: "+";
+        position: absolute;
+        top: 0;
+        right: 6px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        background: #a9a9a9;
+        width: 100%;
+        height: 1px;
+        margin-top: 8px;
+      }
+    }
+
+    &-button-active {
+      position: relative;
+
+      &::before {
+        content: "-";
+        position: absolute;
+        top: 0;
+        right: 6px;
+      }
+    }
+
+    &-panel {
+      opacity: 0;
+      height: 0;
+      padding: 14px 0;
+      color: #424242;
+      visibility: hidden;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    &-panel-active {
+      visibility: visible;
+      opacity: 1;
+      height: auto;
+    }
+  }
+}
