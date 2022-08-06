@@ -1,0 +1,20 @@
+.footer {
+  background-color: #313030;
+
+  &__wrapper {
+    max-width: 1280px;
+    padding: 18px 0;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #fff;
+  }
+
+  &__icon {
+    color: #ff2d2d;
+  }
+}
