@@ -14,9 +14,34 @@
     }
   }
 
+  &__title {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 38px;
+    margin: 0;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 16px 0 0;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
   &__cards {
     display: flex;
     justify-content: space-between;
+    margin: 38px 0 0;
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
