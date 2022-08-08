@@ -35,6 +35,18 @@
     }
   }
 
+  &__subtitle {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 16px 0 0;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 600px);
