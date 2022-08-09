@@ -9,6 +9,10 @@
 @import "../styles/pricing";
 @import "../styles/footer";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .faq-button {
   background-color: #92e3a9;
   color: #fff;
