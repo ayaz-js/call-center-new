@@ -114,19 +114,33 @@
     font-size: 18px;
     font-weight: 300;
     line-height: 28px;
+    display: flex;
+    align-items: center;
 
     &_plus {
       &::before {
-        content: "+";
-        font-weight: 600;
+        content: "";
+        display: block;
+        background-image: url("http://pizza-agent.com/images/plus.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 18px;
+        height: 18px;
         margin-right: 6px;
       }
     }
 
     &_minus {
       &::before {
-        content: "-";
-        font-weight: 600;
+        content: "";
+        display: block;
+        background-image: url("http://pizza-agent.com/images/minus.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 18px;
+        height: 18px;
         margin-right: 6px;
       }
     }
