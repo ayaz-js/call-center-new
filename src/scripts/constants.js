@@ -2,9 +2,9 @@
 
 export const mobileMenu = document.querySelector('.nav__wrapper');
 
-export const mobileMenuButton = document.querySelector('.nav__menu-icon');
+export const mobileMenuButton = document.querySelector('.nav__mobile-menu-button');
 
-export const mobileMenuCloseButton = document.querySelector('.nav__menu-icon-close');
+export const mobileMenuCloseButton = document.querySelector('.nav__mobile-menu-close-button');
 
 export const selectMenuItem = document.querySelector('.nav__menu-list');
 
