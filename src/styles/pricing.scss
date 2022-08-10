@@ -116,18 +116,23 @@
     line-height: 28px;
     display: flex;
     align-items: center;
+    gap: 16px;
 
     &_plus {
       &::before {
         content: "";
         display: block;
-        background-image: url("http://pizza-agent.com/images/plus.png");
+        background-image: url("https://img.icons8.com/color/48/000000/plus--v1.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        width: 18px;
-        height: 18px;
-        margin-right: 6px;
+        width: 20px;
+        height: 20px;
+
+        @media screen and (max-width: 768px) {
+          max-width: 20px;
+          width: 100%;
+        }
       }
     }
 
@@ -135,19 +140,27 @@
       &::before {
         content: "";
         display: block;
-        background-image: url("http://pizza-agent.com/images/minus.png");
+        background-image: url("https://img.icons8.com/color/48/000000/minus.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        width: 18px;
-        height: 18px;
-        margin-right: 6px;
+        width: 20px;
+        height: 20px;
+
+        @media screen and (max-width: 768px) {
+          max-width: 20px;
+          width: 100%;
+        }
       }
     }
 
     @media screen and (max-width: 1024px) {
       font-size: 16px;
       line-height: 24px;
+    }
+
+    @media screen and (max-width: 768px) {
+      gap: 14px;
     }
   }
 }
