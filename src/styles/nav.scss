@@ -6,6 +6,10 @@
     padding: 28px 16px;
   }
 
+  @media screen and (max-width: 425px) {
+    padding: 0;
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;
@@ -20,6 +24,7 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
+      padding: 16px 12px;
       z-index: 3;
       background: #fff;
       width: 100%;
@@ -48,8 +53,8 @@
   &__mobile-menu-close-button {
     display: none;
     position: absolute;
-    top: 12px;
-    right: 26px;
+    top: 26px;
+    right: 12px;
     background-color: transparent;
     border: none;
     padding: 0;
@@ -62,6 +67,7 @@
   &__mobile-menu-icon {
     display: none;
     width: 24px;
+    margin: 16px;
 
     @media screen and (max-width: 425px) {
       display: block;
