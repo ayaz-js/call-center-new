@@ -1,5 +1,4 @@
-const faqSection = document.querySelector('.faq');
-const faqButton = document.querySelector('.faq-button');
+import { faqButton, faqSection } from './constants';
 
 function faqHandleButtonClick() {
     faqSection.scrollIntoView({ block: 'start', behavior: 'smooth' });
