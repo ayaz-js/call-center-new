@@ -8,7 +8,7 @@ import {
 } from './constants';
 
 function closeMenu() {
-    mobileMenu.classList.remove('nav__wrapper_mobile_opened');
+    mobileMenu.classList.remove('nav__wrapper_opened');
     document.body.style.overflow = 'auto';
 }
 

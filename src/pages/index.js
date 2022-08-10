@@ -4,4 +4,4 @@ import '../scripts/accardionCreate';
 import '../scripts/form';
 import '../scripts/faqHandleButtonClick';
 import '../scripts/openMobileMenu';
-import '../scripts/closeMenu';
+import '../scripts/closeMobileMenu';

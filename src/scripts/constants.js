@@ -1,6 +1,6 @@
 // Mobile Menu
 
-export const mobileMenu = document.querySelector('.nav__wrapper_mobile');
+export const mobileMenu = document.querySelector('.nav__wrapper');
 
 export const mobileMenuButton = document.querySelector('.nav__menu-icon');
 

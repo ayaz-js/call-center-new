@@ -21,26 +21,23 @@
     max-width: 1280px;
     margin: 0 auto;
 
-    &_mobile {
-      display: none;
+    @media screen and (max-width: 425px) {
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      z-index: 3;
+      background: #fff;
+      width: 100%;
+      height: 100vh;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
 
-      @media screen and (max-width: 425px) {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        z-index: 3;
-        background: #fff;
-        width: 100%;
-        height: 100vh;
-        transform: translateX(-100%);
+      &_opened {
+        transform: translateX(0);
         transition: transform 0.3s ease-in-out;
-
-        &_opened {
-          transform: translateX(0);
-          transition: transform 0.3s ease-in-out;
-        }
       }
     }
   }
