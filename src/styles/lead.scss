@@ -61,6 +61,9 @@
   }
 
   &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #92e3a9;
     color: #fff;
     font-size: 20px;
@@ -73,6 +76,12 @@
     cursor: pointer;
     padding: 8px 16px;
     margin: 16px 0 0;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #79c594;
+    }
 
     @media screen and (max-width: 1024px) {
       font-size: 18px;
