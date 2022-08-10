@@ -53,7 +53,7 @@
   &__mobile-menu-close-button {
     display: none;
     position: absolute;
-    top: 26px;
+    top: 16px;
     right: 12px;
     background-color: transparent;
     border: none;
@@ -88,10 +88,10 @@
 
   &__logo {
     display: block;
-    width: 64px;
+    width: 36px;
 
     @media screen and (max-width: 425px) {
-      width: 48px;
+      width: 32px;
     }
   }
 
