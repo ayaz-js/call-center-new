@@ -168,4 +168,25 @@
       gap: 14px;
     }
   }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #92e3a9;
+    max-width: 150px;
+    height: 36px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 22px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #79c594;
+    }
+  }
 }
