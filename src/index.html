@@ -6,6 +6,34 @@
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '368974405409072');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=368974405409072&ev=PageView&noscript=1" />
+  </noscript>
+  <!-- End Meta Pixel Code -->
   <title>PizzaAgent - outsourcing customer service</title>
   <script src="https://use.fontawesome.com/4b24781069.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,16 +66,17 @@
     <!-- nav -->
     <section class="nav">
       <button class="nav__mobile-menu-button">
-        <img class="nav__mobile-menu-icon" src="https://img.icons8.com/ios-filled/50/000000/menu-rounded.png"/>
+        <img class="nav__mobile-menu-icon" src="https://img.icons8.com/ios-filled/50/000000/menu-rounded.png" />
       </button>
 
       <div class="nav__wrapper">
         <button class="nav__mobile-menu-close-button">
-          <img class="nav__mobile-menu-icon-close" src="https://img.icons8.com/ios-filled/50/000000/delete-sign--v1.png"/>
+          <img class="nav__mobile-menu-icon-close"
+            src="https://img.icons8.com/ios-filled/50/000000/delete-sign--v1.png" />
         </button>
 
         <a href="/" class="nav__link">
-          <img class="nav__logo" src="http://pizza-agent.com/images/logo.png"/>
+          <img class="nav__logo" src="http://pizza-agent.com/images/logo.png" />
           <span class="nav__logo-text">Pizza Agent</span>
         </a>
 
@@ -88,9 +117,10 @@
             <div class="lead__banner-mobile">
               <img src="http://pizza-agent.com/images/banner-picture.svg" alt="" class="lead__image">
             </div>
-            <p class="lead__subtitle">Scale up effectively with outstanding and cost-effective customer support outsourcing.
+            <p class="lead__subtitle">Scale up effectively with outstanding and cost-effective customer support
+              outsourcing.
               Set up your remote team in few days.</p>
-            <a  href="#whatWeDo" class="lead__button">Get Started</a>
+            <a href="#whatWeDo" class="lead__button">Get Started</a>
           </div>
           <div class="lead__banner">
             <img src="http://pizza-agent.com/images/banner-picture.svg" alt="" class="lead__image">
@@ -154,7 +184,8 @@
                 </button>
                 <div class="faq__accardion-panel">
                   <p class="faq__accardion-text">
-                    We can either connect to your POS or set up our own cloud-based POS. We place the order remotely, the check appears in your kitchen.
+                    We can either connect to your POS or set up our own cloud-based POS. We place the order remotely,
+                    the check appears in your kitchen.
                   </p>
                 </div>
               </div>
