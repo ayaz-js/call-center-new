@@ -1,8 +1,8 @@
 .pricing {
-  padding: 80px 0 0;
+  padding: 45px 0 0;
 
   @media screen and (max-width: 1024px) {
-    padding: 60px 16px 0;
+    padding: 45px 16px 0;
   }
 
   &__wrapper {
@@ -10,7 +10,7 @@
     margin: 0 auto;
 
     @media screen and (max-width: 768px) {
-      max-width: 550px;
+      max-width: 450px;
     }
   }
 
